@@ -1,0 +1,14 @@
+# Unity generated files
+Temp/
+Library/
+LocalSettings/
+UserSettings/
+
+# Visual Studio cache files
+.vs/
+
+# Windows thumbnail cache files
+Thumbs.db
+
+# macOS hidden files
+.DS_Store
