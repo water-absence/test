@@ -1,6 +1,8 @@
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
+using UnityEngine.Events;
+using ZombieDriveGame;
 
 public class ChineseTranslation : MonoBehaviour
 {
@@ -9,13 +11,18 @@ public class ChineseTranslation : MonoBehaviour
 
     void Start()
     {
-        // ³õÊ¼»¯×Öµä
-        translationDict = new Dictionary<string, string>();
-        foreach (TranslationPair pair in translationPairs)
-        {
-            translationDict[pair.englishText] = pair.chineseText;
-        }
+        InitializeTranslation();
+        TranslateTexts();
 
+        ZDGGameController gameController = FindObjectOfType<ZDGGameController>();
+        if (gameController != null)
+        {
+            gameController.onGameOver.AddListener(TranslateTexts);
+        }
+    }
+
+    public void TranslateTexts()
+    {
         TMP_Text[] allTexts = FindObjectsOfType<TMP_Text>();
         foreach (TMP_Text text in allTexts)
         {
@@ -23,6 +30,15 @@ public class ChineseTranslation : MonoBehaviour
             {
                 text.text = translationDict[text.text];
             }
+        }
+    }
+
+    private void InitializeTranslation()
+    {
+        translationDict = new Dictionary<string, string>();
+        foreach (TranslationPair pair in translationPairs)
+        {
+            translationDict[pair.englishText] = pair.chineseText;
         }
     }
 }

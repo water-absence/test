@@ -1,0 +1,262 @@
+Using pre-set license
+Built from '2020.3/china_unity/release' branch; Version is '2021.3.41f1c1 (abf9ed549ceb) revision 11270637'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 16088 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\2021.3.41f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+E:/xioachu/test/NewTest
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+51293
+Successfully changed project path to: E:/xioachu/test/NewTest
+E:/xioachu/test/NewTest
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [27044] Host "[IP] 26.167.147.49 [Port] 0 [Flags] 2 [Guid] 3885087889 [EditorId] 3885087889 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-R93T5VTJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [27044] Host "[IP] 26.167.147.49 [Port] 0 [Flags] 2 [Guid] 3885087889 [EditorId] 3885087889 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-R93T5VTJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+AS: AutoStreaming module initializing.
+[Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
+Refreshing native plugins compatible for Editor in 34.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.41f1c1 (abf9ed549ceb)
+[Subsystems] Discovering subsystems at path D:/Unity/2021.3.41f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/xioachu/test/NewTest/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Laptop GPU (ID=0x25a2)
+    Vendor:   NVIDIA
+    VRAM:     3964 MB
+    Driver:   32.0.15.6081
+Initialize mono
+Mono path[0] = 'D:/Unity/2021.3.41f1c1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2021.3.41f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2021.3.41f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56272
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2021.3.41f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006726 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 33.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.503 seconds
+Domain Reload Profiling:
+	ReloadAssembly (503ms)
+		BeginReloadAssembly (93ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (319ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (81ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (172ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (34ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (96ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007999 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.161 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1162ms)
+		BeginReloadAssembly (124ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (943ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (192ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (621ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (532ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3096 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (46.4 KB). Loaded Objects now: 3559.
+Memory consumption went from 111.8 MB to 111.7 MB.
+Total: 2.273400 ms (FindLiveObjects: 0.171000 ms CreateObjectMapping: 0.073100 ms MarkObjects: 1.973700 ms  DeleteObjects: 0.054800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 24861.739451 seconds.
+  path: Assets/ZDGAssets/CS_Assets/CS_Scenes/ZDGGame/LightingData.asset
+  artifactKey: Guid(19e29462ec89fb24dba9794f7340cd68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/ZDGAssets/CS_Assets/CS_Scenes/ZDGGame/LightingData.asset using Guid(19e29462ec89fb24dba9794f7340cd68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Lighting data asset ‘LightingData’ is incompatible with the current Unity version. Please use Generate Lighting to rebuild the lighting data. Realtime Global Illumination cannot be used until the lighting data is rebuilt.
+Lighting data asset ‘LightingData’ is incompatible with the current Unity version because the scene it was baked for was not serialized. Please use Generate Lighting to rebuild the lighting data, or assign the target scene to the Lighting Data Asset in the inspector.
+ -> (artifact id: 'f56504f74a69c06d6c63e40d3dc9745e') in 0.031255 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.512206 seconds.
+  path: Assets/ZDGAssets/CS_Assets/CS_Prefabs/Zombies/Zombie2.prefab
+  artifactKey: Guid(dad03456549188a46b2f8a1c45fe9e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/ZDGAssets/CS_Assets/CS_Prefabs/Zombies/Zombie2.prefab using Guid(dad03456549188a46b2f8a1c45fe9e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0377a2942c58a049b843c0e73749f029') in 0.127165 seconds 
+Number of asset objects unloaded after import = 100
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/ZDGAssets/CS_Assets/CS_Prefabs/Zombies/ZombieHordeStart.prefab
+  artifactKey: Guid(47dac1d3bf9772548a20db2a320692d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/ZDGAssets/CS_Assets/CS_Prefabs/Zombies/ZombieHordeStart.prefab using Guid(47dac1d3bf9772548a20db2a320692d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b001579396e59ddf8a95c81c323e6d9a') in 0.044438 seconds 
+Number of asset objects unloaded after import = 1535
+========================================================================
+Received Import Request.
+  Time since last request: 5.750996 seconds.
+  path: Assets/ZDGAssets/CS_Assets/CS_Prefabs/Canvas/CanvasGameOver.prefab
+  artifactKey: Guid(244628252e0b0a148a810a8372f9ea85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/ZDGAssets/CS_Assets/CS_Prefabs/Canvas/CanvasGameOver.prefab using Guid(244628252e0b0a148a810a8372f9ea85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '948b76a0b5a69edd06500ea9bc39fad2') in 0.012325 seconds 
+Number of asset objects unloaded after import = 49
+========================================================================
+Received Import Request.
+  Time since last request: 0.008932 seconds.
+  path: Assets/ZDGAssets/CS_Assets/CS_Prefabs/Canvas/CanvasMenu.prefab
+  artifactKey: Guid(28b7f357fdb82ed4ca39e8771365aa4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/ZDGAssets/CS_Assets/CS_Prefabs/Canvas/CanvasMenu.prefab using Guid(28b7f357fdb82ed4ca39e8771365aa4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c2da2fe58a03010534206037aacddb9') in 0.007793 seconds 
+Number of asset objects unloaded after import = 61
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/ZDGAssets/CS_Assets/CS_Prefabs/Canvas/ReadyGoEffect.prefab
+  artifactKey: Guid(11426788c50bf454caecd76c9f6dc0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/ZDGAssets/CS_Assets/CS_Prefabs/Canvas/ReadyGoEffect.prefab using Guid(11426788c50bf454caecd76c9f6dc0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3435144d70b1e9af312a646e0a80f421') in 0.004940 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.794885 seconds.
+  path: Assets/ZDGAssets/CS_Assets/CS_Prefabs/Effects/PickupEffect.prefab
+  artifactKey: Guid(416f114f192a6d54bb16d7f0957b2826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/ZDGAssets/CS_Assets/CS_Prefabs/Effects/PickupEffect.prefab using Guid(416f114f192a6d54bb16d7f0957b2826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d2feb2550c4b84a39939ae310144a13') in 0.008793 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/ZDGAssets/CS_Assets/CS_Prefabs/Effects/TreeExplode.prefab
+  artifactKey: Guid(1cfa6ee97c636834f9de94ee2fe25bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/ZDGAssets/CS_Assets/CS_Prefabs/Effects/TreeExplode.prefab using Guid(1cfa6ee97c636834f9de94ee2fe25bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f54b25aca798f579508483eebf30ec0') in 0.016871 seconds 
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ZDGAssets/CS_Assets/CS_Prefabs/Effects/RockExplode.prefab
+  artifactKey: Guid(4f1e8c8b7eb97bf4a9e7de3b6d1e2729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/ZDGAssets/CS_Assets/CS_Prefabs/Effects/RockExplode.prefab using Guid(4f1e8c8b7eb97bf4a9e7de3b6d1e2729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07f22b1008b6f1b008058ddde02ef46b') in 0.015630 seconds 
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.485704 seconds.
+  path: Assets/ZDGAssets/CS_Assets/CS_Prefabs/Intro/ZDGLevelIntro.prefab
+  artifactKey: Guid(640fbbcb2faa62742aff65598bcfc01e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/ZDGAssets/CS_Assets/CS_Prefabs/Intro/ZDGLevelIntro.prefab using Guid(640fbbcb2faa62742aff65598bcfc01e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b5b28ab6a32de23ed8854e3d26080fa') in 0.047234 seconds 
+Number of asset objects unloaded after import = 1343
+========================================================================
+Received Import Request.
+  Time since last request: 0.458349 seconds.
+  path: Assets/ZDGAssets/CS_Assets/CS_Prefabs/Obstacles/Rock.prefab
+  artifactKey: Guid(e16ddbc51620a444b9f397d226d53933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/ZDGAssets/CS_Assets/CS_Prefabs/Obstacles/Rock.prefab using Guid(e16ddbc51620a444b9f397d226d53933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '417819c4c254c440d6aa63c14ecce369') in 0.013159 seconds 
+Number of asset objects unloaded after import = 32
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

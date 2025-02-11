@@ -18,6 +18,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using ZombieDriveGame.Types;
+using UnityEngine.Events;
+using TMPro;
+using ZombieDriveGame;
+using System.Collections.Generic;
 
 namespace ZombieDriveGame
 {
@@ -26,6 +30,7 @@ namespace ZombieDriveGame
 	/// </summary>
 	public class ZDGGameController : MonoBehaviour 
 	{
+        public GameOverEvent onGameOver;
         // The camera object and the camera holder that contains it and follows the player
         internal Camera cameraObject;
         internal Transform cameraHolder;
@@ -607,7 +612,11 @@ namespace ZombieDriveGame
 					
 					soundSource.GetComponent<AudioSource>().PlayOneShot(soundGameOver);
 				}
-			}
+                if (onGameOver != null)
+                {
+                    onGameOver.Invoke();
+                }
+            }
 		}
 		
 		/// <summary>
