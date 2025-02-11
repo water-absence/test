@@ -19,6 +19,10 @@ public class ChineseTranslation : MonoBehaviour
         {
             gameController.onGameOver.AddListener(TranslateTexts);
         }
+        else
+        {
+            Debug.LogWarning("ZDGGameController not found. TranslateTexts will not be called on game over.");
+        }
     }
 
     public void TranslateTexts()
@@ -39,6 +43,15 @@ public class ChineseTranslation : MonoBehaviour
         foreach (TranslationPair pair in translationPairs)
         {
             translationDict[pair.englishText] = pair.chineseText;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        ZDGGameController gameController = FindObjectOfType<ZDGGameController>();
+        if (gameController != null)
+        {
+            gameController.onGameOver.RemoveListener(TranslateTexts);
         }
     }
 }

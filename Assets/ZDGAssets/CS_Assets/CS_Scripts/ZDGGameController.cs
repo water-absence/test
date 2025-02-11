@@ -30,7 +30,7 @@ namespace ZombieDriveGame
 	/// </summary>
 	public class ZDGGameController : MonoBehaviour 
 	{
-        public GameOverEvent onGameOver;
+        public UnityEvent onGameOver = new UnityEvent();
         // The camera object and the camera holder that contains it and follows the player
         internal Camera cameraObject;
         internal Transform cameraHolder;
@@ -46,6 +46,9 @@ namespace ZombieDriveGame
 
         [Tooltip("How far should the player move before the ground object repeats")]
         public float groundRepeatDistance = 20;
+
+        [Tooltip("The button that will resurrect the player after game over")]
+        public GameObject resurrectButton;
 
         [Tooltip("The edge of the street where there is a railing that bounces the player back")]
         public float streetEdge = 2;
@@ -589,9 +592,16 @@ namespace ZombieDriveGame
 			{
 				//Show the game over screen
 				gameOverCanvas.gameObject.SetActive(true);
-				
-				//Write the score text
-				gameOverCanvas.Find("Base/TextScore").GetComponent<Text>().text = "SCORE " + score.ToString();
+
+                if (resurrectCount > 0)
+                {
+                    if (resurrectButton)
+                    {
+                        resurrectButton.SetActive(true);
+                    }
+                }
+                //Write the score text
+                gameOverCanvas.Find("Base/TextScore").GetComponent<Text>().text = "当前分数 " + score.ToString();
 				
 				//Check if we got a high score
 				if ( score > highScore )    
@@ -603,7 +613,7 @@ namespace ZombieDriveGame
 				}
 				
 				//Write the high sscore text
-				gameOverCanvas.Find("Base/TextHighScore").GetComponent<Text>().text = "HIGH SCORE " + highScore.ToString();
+				gameOverCanvas.Find("Base/TextHighScore").GetComponent<Text>().text = "最高分数 " + highScore.ToString();
 
 				//If there is a source and a sound, play it from the source
 				if ( soundSource && soundGameOver )    
@@ -616,13 +626,36 @@ namespace ZombieDriveGame
                 {
                     onGameOver.Invoke();
                 }
+                yield return null;
             }
 		}
-		
-		/// <summary>
-		/// Restart the current level
-		/// </summary>
-		void  Restart()
+        public void Resurrect()
+        {
+            if (resurrectCount > 0)
+            {
+                
+                resurrectCount--;
+                
+                if (resurrectButton)
+                {
+                    resurrectButton.SetActive(false);
+                }
+                
+                playerObject.health = playerObject.healthMax;
+                playerObject.fuel = playerObject.fuelMax;
+                
+                isGameOver = false;
+                if (gameOverCanvas)
+                {
+                    gameOverCanvas.gameObject.SetActive(false);
+                }
+            }
+        }
+        private int resurrectCount = 1;
+        /// <summary>
+        /// Restart the current level
+        /// </summary>
+        void  Restart()
 		{
 			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 		}
